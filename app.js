@@ -1,14 +1,14 @@
 let calculation = JSON.parse(localStorage.getItem('calculation'))
 if (calculation === null) {
     calculation = ''
-    console.log('0')
+    document.querySelector('.js-calculation').innerHTML='0'
 }
 else {
-    console.log(calculation)
+    document.querySelector('.js-calculation').innerHTML=calculation
 }
 
 function updateCalculation(value) {
     calculation += value;
-    console.log(calculation);
+    document.querySelector('.js-calculation').innerHTML=calculation
     localStorage.setItem('calculation', JSON.stringify(calculation))
 }
