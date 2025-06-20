@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <p class="js-calculation"></p>
+  <p class="js-calculation calculation"></p>
   <p>
     <button onclick="
         updateCalculation('1');
@@ -25,7 +25,7 @@
 
     <button onclick="
         updateCalculation(' + ');
-      ">+</button>
+      " class="arithmetic-operators">+</button>
   </p>
 
   <p>
@@ -43,7 +43,7 @@
 
     <button onclick="
         updateCalculation(' - ');
-      ">-</button>
+      " class="arithmetic-operators">-</button>
   </p>
 
   <p>
@@ -61,7 +61,7 @@
 
     <button onclick="
         updateCalculation(' * ');
-      ">*</button>
+      " class="arithmetic-operators">*</button>
   </p>
 
   <p>
@@ -85,7 +85,7 @@
 
     <button onclick="
         updateCalculation(' / ');
-      ">/</button>
+      " class="arithmetic-operators">/</button>
   </p>
 
   <p>
@@ -93,7 +93,7 @@
         calculation = '';
         localStorage.removeItem('calculation')
         document.querySelector('.js-calculation').innerHTML='0'
-      ">Clear</button>
+      " class="clear-button">Clear</button>
   </p>
 
   <script src="app.js"></script>
